@@ -165,6 +165,10 @@ GROUP BY device_id;
 6. Ordinare i videogame in base alla media delle recensioni (del videogioco vogliamo solo l'ID) (500)
 
 ```
+SELECT videogame_id , avg(rating)
+FROM reviews r 
+GROUP BY videogame_id 
+ORDER BY avg(rating) DESC ; 
 ```
 
 
